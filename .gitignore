@@ -1,0 +1,4 @@
+*~
+*.swp
+.hubot_history
+node_modules/**
