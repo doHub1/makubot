@@ -1,2 +1,2 @@
 #!/bin/bash
-bin/hubot -a shell -n azu
+bin/hubot -a shell -n makubot
