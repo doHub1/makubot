@@ -1,3 +1,30 @@
+# テスト環境構築手順
+困ったことがあれば@endoまで
+
+## githubのアカウント取得
+→https://github.com/join
+
+## gitの初期設定
+	git config --global user.name "ほげ"
+	git config --global user.email "hoge@example.com"
+
+## ソースのチェックアウト
+	(適当なディレクトリを作成・移動)
+	git clone https://github.com/whiz777/makubot.git
+
+## ブランチ作成
+	cd makubot
+	git checkout -b ほげ
+
+## 必要パッケージのインストール
+	sudo yum -y install nodejs redis npm --enablerepo=epel
+	sudo npm install -g coffee-script hubot yo generator-hubot
+
+## コンソール上でhubot起動
+	./test.sh
+
+# 以下、本家README.md
+
 # makubot
 
 makubot is a chat bot built on the [Hubot][hubot] framework. It was
