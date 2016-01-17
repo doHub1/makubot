@@ -2,7 +2,7 @@
 #   <定刻発言スクリプト>
 #
 # Dependencies:
-#   "<cron>": "<x.x.x>"
+#   "<cron>": "<1.1.0>"
 #
 # Commands:
 #   N/A
