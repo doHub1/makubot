@@ -1,5 +1,5 @@
 #!/bin/bash
 
-export HUBOT_SLACK_TOKEN=xoxb-18012967430-uMZa3OWF4RROzW9z5Uzxmh61
+export HUBOT_SLACK_TOKEN=xoxb-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 forever start -c coffee makubot -a slack
