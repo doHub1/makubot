@@ -2,3 +2,4 @@
 *.swp
 .hubot_history
 node_modules/**
+start.sh

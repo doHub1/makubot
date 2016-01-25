@@ -23,4 +23,4 @@ module.exports = (robot) ->
     start: true
     timeZone: "Asia/Tokyo"
     onTick: ->
-      robot.messageRoom "hiru_benkyo", "cronを用いたサンプルマクロをコミットしました。"
+#      robot.messageRoom "hiru_benkyo", "cronを用いたサンプルマクロをコミットしました。"
