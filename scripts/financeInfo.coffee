@@ -1,17 +1,17 @@
-﻿# Description
-#   <投資情報表示スクリプト>
+# Description
+#   投資情報表示スクリプト
 #
 # Dependencies:
 #   "<cheerio-httpcli>": "<0.3.2>"
 #
 # Commands:
-#   ドル円 - <現在のドル円レートを表示します>
+#   ドル円 - 現在のドル円レートを表示します
 #
 # Notes:
-#   <optional notes required for the script>
+#   optional notes required for the script
 #
 # Author:
-#   <whiz777>
+#   whiz777
 
 client = require 'cheerio-httpcli'
 

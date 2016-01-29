@@ -1,7 +1,7 @@
 # Description:
 #   http://tiqav.com/
 #   ここを検索して画像を返す
-# Command:
+# Commands:
 #   makubot res ${keyword}
 
 API_URI = 'http://api.tiqav.com/search.json?q='

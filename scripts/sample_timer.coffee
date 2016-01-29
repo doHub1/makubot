@@ -1,17 +1,14 @@
-﻿# Description
+# Description
 #   <定刻発言スクリプト>
 #
 # Dependencies:
 #   "<cron>": "<1.1.0>"
 #
-# Commands:
-#   N/A
-#
 # Notes:
 #   <optional notes required for the script>
 #
 # Author:
-#   <whiz777>
+#   whiz777
 
 cron = require('cron').CronJob
 

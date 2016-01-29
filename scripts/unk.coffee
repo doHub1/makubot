@@ -1,4 +1,4 @@
-﻿# Description
+# Description
 #   Send unk to someone(random)
 # Commands:
 #   makubot unk
