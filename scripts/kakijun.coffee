@@ -1,4 +1,4 @@
-# Description
+# Description:
 #   漢字書き順表示スクリプト
 #
 # Dependencies:
@@ -13,36 +13,27 @@
 #
 # Author:
 #   fujitani
-cheerio = require 'cheerio-httpcli'
-#request = require 'request'
+cheerio = require 'cheerio'
+request = require 'request'
 url = "http://kanji.quus.net/search/"
 
 module.exports= (robot) ->
-  robot.hear /書き順 (.+)/i, (msg) ->
+  robot.respond /書き順 (.+)/i, (msg) ->
     kanji = msg.match[1]
-    console.log kanji
-    
-    options =
-      url: url
-      headers: {'Content-Type': 'application/json'}
-      srji: kanji
-
     data = JSON.stringify { srji: kanji }
-    # NOTE:
-    # robot.httpでなくrequestを使うとリダイレクト先の
-    # ページをもってこれるらしいが、もってきてくれない
-    console.log data
-    robot.http(url)
-      .header('Content-Type', 'application/json')
-      .post(data) (err, res, body) ->
-        console.log body
+
+    request.post {
+      url: url
+      form: srji: kanji
+    }, (err, res, body) ->
         unless err?
-          console.log res.headers
           if res.headers.location?
             # リダイレクトの場合、そのリダイレクト先の
-            # ページを取得する(未実装)
+            # ページを取得する
             request res.headers.location, (err, res, body) ->
-              msg.send body
-              # スクレイピングし、gifのみ取得(未実装)
-              # $ = cheerio.load body
-              # msg.send $('img')
+              #msg.send body
+              # スクレイピングし、gifのみ取得
+              $ = cheerio.load body
+              msg.send $('img')[0].attribs.src
+        else
+          msg.send('#{res.statusCode} ERROR')
