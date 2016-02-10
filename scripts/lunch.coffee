@@ -5,7 +5,8 @@
 #   None
 #
 # Commands:
-#   プラージュ - ランチメニューを表示します
+#   makubot プラ|プラージュ - プラージュのメニューを表示します
+#   makubot 献立 - 幕張15階WESTのメニューを表示します
 #
 # Notes:
 #   optional notes required for the script
