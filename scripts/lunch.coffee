@@ -20,7 +20,7 @@ module.exports = (robot) ->
     msg.send 'ゆすら：043-211-4265 '
 
   robot.respond /プラ|プラージュ/, (msg) ->
-    msg.send 'プラージュ：http://goo.gl/fU5HSY (TEL:043-211-4264) '
+    msg.send 'プラージュ：http://goo.gl/fU5HSY (TEL:043-297-6681) '
 
   robot.respond /献立/, (msg) ->
     msg.send 'http://rainbow.gpd.nttcom.co.jp/kousei/sub9-1.html '
