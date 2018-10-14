@@ -1,5 +1,5 @@
 # テスト環境構築手順
-困ったことがあれば@endoまで
+困ったことがあれば@doまで
 
 ## githubのアカウント取得
 →https://github.com/join
@@ -10,7 +10,7 @@
 
 ## ソースのチェックアウト
 	(適当なディレクトリを作成・移動)
-	git clone https://github.com/whiz777/makubot.git
+	git clone https://github.com/doTechHub/makubot.git
 
 ## ブランチ作成
 	cd makubot
